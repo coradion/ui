@@ -1,12 +1,14 @@
 {
   "name": "@coradion/ui",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "A component library for Coradion sites and apps",
   "main": "src/index.ts",
-  "files": ["src/**/*"],
+  "files": [
+    "src/**/*"
+  ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:coradion/ui.git"
+    "url": "https://github.com/coradion/ui"
   },
   "bugs": {
     "url": "https://github.com/coradion/ui/issues"
@@ -16,7 +18,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "semantic-release": "semantic-release"
   },
   "author": "Coradion",
   "license": "AGPL-3.0-or-later",
@@ -28,7 +31,8 @@
     "eslint": "^7.31.0",
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.3.2",
-    "typescript": "^4.3.5"
+    "typescript": "^4.3.5",
+    "semantic-release": "^17.4.7"
   },
   "dependencies": {
     "react": "^17.0.2",

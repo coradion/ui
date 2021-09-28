@@ -39,7 +39,10 @@
     "styled-components": "^5.3.0"
   },
   "release": {
-    "branches": ["main", "next"]
+    "branches": [
+      "main",
+      "next"
+    ]
   },
   "private": false,
   "publishConfig": {

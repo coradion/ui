@@ -2,9 +2,9 @@
   "name": "@coradion/ui",
   "version": "0.0.0-development",
   "description": "A component library for Coradion sites and apps",
-  "main": "src/index.ts",
+  "main": "libs/index.ts",
   "files": [
-    "src/**/*"
+    "libs/**/*"
   ],
   "repository": {
     "type": "git",
@@ -14,28 +14,40 @@
     "url": "https://github.com/coradion/ui/issues"
   },
   "directories": {
-    "src": "src"
+    "libs": "libs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "Coradion",
   "license": "AGPL-3.0-or-later",
   "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
     "@tsconfig/recommended": "^1.0.1",
     "@types/styled-components": "^5.1.11",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",
+    "babel-loader": "^8.2.3",
     "eslint": "^8.7.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-storybook": "^0.5.7",
     "prettier": "^2.3.2",
-    "typescript": "^4.3.5",
-    "semantic-release": "^19.0.2"
+    "semantic-release": "^19.0.2",
+    "typescript": "^4.3.5"
   },
   "dependencies": {
     "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "styled-components": "^5.3.0"
   },
   "release": {

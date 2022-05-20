@@ -27,6 +27,7 @@
   "license": "AGPL-3.0-or-later",
   "devDependencies": {
     "@babel/core": "^7.17.5",
+    "@mdx-js/react": "^2.1.1",
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-docs": "^6.4.19",
     "@storybook/addon-essentials": "^6.4.19",
@@ -35,7 +36,7 @@
     "@storybook/builder-webpack5": "^6.4.19",
     "@storybook/manager-webpack5": "^6.4.19",
     "@storybook/react": "^6.4.19",
-    "@storybook/testing-library": "^0.0.9",
+    "@storybook/testing-library": "^0.0.11",
     "@tsconfig/recommended": "^1.0.1",
     "@types/styled-components": "^5.1.11",
     "@typescript-eslint/eslint-plugin": "^5.10.0",

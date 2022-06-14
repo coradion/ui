@@ -36,7 +36,7 @@
     "@storybook/builder-webpack5": "^6.4.19",
     "@storybook/manager-webpack5": "^6.4.19",
     "@storybook/react": "^6.4.19",
-    "@storybook/testing-library": "^0.0.12",
+    "@storybook/testing-library": "^0.0.13",
     "@tsconfig/recommended": "^1.0.1",
     "@types/styled-components": "^5.1.11",
     "@typescript-eslint/eslint-plugin": "^5.10.0",

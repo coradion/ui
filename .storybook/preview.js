@@ -1,3 +1,6 @@
+import { theme } from "./theme";
+import { Theme } from "../libs/Theme";
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
@@ -6,4 +9,14 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+  layout: "centered",
+  docs: { theme },
+};
+
+export const decorators = [
+  (Story) => (
+    <Theme>
+      <Story />
+    </Theme>
+  ),
+];

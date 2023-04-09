@@ -1,4 +1,4 @@
-import { Button } from "../src/components/Button";
+import { Button } from "../src";
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/react/writing-stories/introduction
 export default {

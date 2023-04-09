@@ -1,4 +1,5 @@
-import React, { FunctionComponent, useMemo } from "react";
+import React, { useMemo } from "react";
+import type { FunctionComponent } from "react";
 
 const getSizeClasses = (size: "small" | "medium" | "large") => {
   switch (size) {

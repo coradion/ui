@@ -21,7 +21,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build-tailwind": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css",
-    "build": "copyfiles -u 1 src/* dist -e src/styles.css && npm run build-tailwind"
+    "build": "copyfiles -u 1 -e src/styles.css \"src/**/*\" dist && npm run build-tailwind"
   },
   "author": "Coradion",
   "license": "AGPL-3.0-or-later",

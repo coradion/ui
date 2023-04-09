@@ -1,13 +1,10 @@
 {
-  "extends": "@tsconfig/recommended/tsconfig.json",
+  "extends": "@tsconfig/strictest/tsconfig.json",
   "compilerOptions": {
-    "baseUrl": "libs",
+    "baseUrl": "src",
     "module": "ESNext",
     "jsx": "preserve",
     "moduleResolution": "Node"
   },
-  "include": [
-    "libs/**/*",
-    "stories/**/*"
-  ]
+  "include": ["src/**/*", "stories/**/*"]
 }

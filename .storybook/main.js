@@ -1,15 +1,25 @@
-module.exports = {
-  "stories": [
-    "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)"
-  ],
-  "addons": [
+/** @type { import('@storybook/react-webpack5').StorybookConfig } */
+const config = {
+  stories: ["../stories/**/*.mdx", "../stories/**/*.stories.@(js|jsx|ts|tsx)"],
+  addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions"
+    "@storybook/addon-interactions",
+    {
+      name: "@storybook/addon-styling",
+      options: {
+        // Check out https://github.com/storybookjs/addon-styling/blob/main/docs/api.md
+        // For more details on this addon's options.
+        postCss: true,
+      },
+    },
   ],
-  "framework": "@storybook/react",
-  "core": {
-    "builder": "webpack5"
-  }
-}
+  framework: {
+    name: "@storybook/react-webpack5",
+    options: {},
+  },
+  docs: {
+    autodocs: "tag",
+  },
+};
+export default config;

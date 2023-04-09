@@ -61,7 +61,8 @@
     "branches": [
       "main",
       {
-        "name": "next"
+        "name": "next",
+        "prerelease": true
       }
     ]
   },

@@ -1,5 +1,5 @@
-import { theme } from "./theme";
-import { Theme } from "../libs/Theme";
+import "../src/styles.css";
+import { withThemeByDataAttribute } from "@storybook/addon-styling";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -9,14 +9,15 @@ export const parameters = {
       date: /Date$/,
     },
   },
-  layout: "centered",
-  docs: { theme },
 };
 
 export const decorators = [
-  (Story) => (
-    <Theme>
-      <Story />
-    </Theme>
-  ),
+  withThemeByDataAttribute({
+    themes: {
+      light: "light",
+      dark: "dark",
+    },
+    defaultTheme: "light",
+    attributeName: "data-mode",
+  }),
 ];

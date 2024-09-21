@@ -1,6 +1,18 @@
 version: 2
+
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: npm
+    directory: /
     schedule:
-      interval: "daily"
+      interval: weekly
+    commit-message:
+      prefix: chore
+      include: scope
+    groups:
+      non-major-revisions:
+        update-types:
+          - minor
+          - patch
+      major-revisions:
+        update-types:
+          - major

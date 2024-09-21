@@ -9,10 +9,9 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "outDir": "dist",
-    "rootDir": "src",
     "sourceMap": true,
     "sourceRoot": "src",
     "target": "ESNext"
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*", ".storybook/**/*"],
 }

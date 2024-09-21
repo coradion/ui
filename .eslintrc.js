@@ -15,7 +15,7 @@ module.exports = {
       },
     },
     {
-      files: ["stories/**/*"],
+      files: ["stories/**/*", ".storybook/**/*"],
       extends: ["plugin:storybook/recommended"],
     },
   ],

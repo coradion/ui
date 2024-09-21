@@ -6,22 +6,10 @@ const config = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    {
-      name: "@storybook/addon-styling",
-      options: {
-        postCss: {
-          implementation: require.resolve("postcss"),
-        },
-      },
-    },
-    "@storybook/addon-webpack5-compiler-swc",
-    "@chromatic-com/storybook"
+    "@chromatic-com/storybook",
   ],
 
-  framework: {
-    name: "@storybook/react-webpack5",
-    options: {},
-  },
+  framework: "@storybook/experimental-nextjs-vite",
 
   docs: {},
 

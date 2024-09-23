@@ -1,7 +1,7 @@
 {
   "extends": "@tsconfig/strictest/tsconfig.json",
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": ".",
     "composite": true,
     "declaration": true,
     "declarationMap": true,
@@ -11,7 +11,10 @@
     "outDir": "dist",
     "sourceMap": true,
     "sourceRoot": "src",
-    "target": "ESNext"
+    "target": "ESNext",
+    "paths": {
+      "~/*": ["./*"]
+    }
   },
   "include": ["src/**/*", ".storybook/**/*"],
 }

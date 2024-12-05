@@ -1,5 +1,6 @@
-/** @type { import('@storybook/react-webpack5').StorybookConfig } */
-const config = {
+import type { StorybookConfig } from "@storybook/nextjs";
+
+const config: StorybookConfig = {
   stories: ["../stories/**/*.mdx", "../stories/**/*.stories.@(js|jsx|ts|tsx)"],
 
   addons: [
@@ -9,7 +10,7 @@ const config = {
     "@chromatic-com/storybook",
   ],
 
-  framework: "@storybook/experimental-nextjs-vite",
+  framework: "@storybook/nextjs",
 
   docs: {},
 

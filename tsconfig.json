@@ -5,7 +5,7 @@
     "composite": true,
     "declaration": true,
     "declarationMap": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "module": "ESNext",
     "moduleResolution": "Node",
     "outDir": "dist",

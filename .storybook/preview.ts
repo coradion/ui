@@ -1,8 +1,8 @@
 import { withThemeByClassName } from "@storybook/addon-themes";
-
+import { Parameters, Decorator } from '@storybook/react';
 import "../src/styles.css";
 
-export const parameters = {
+export const parameters: Parameters = {
   controls: {
     matchers: {
       color: /(background|color)$/i,
@@ -11,7 +11,7 @@ export const parameters = {
   },
 };
 
-export const decorators = [
+export const decorators: Decorator[] = [
   withThemeByClassName({
     themes: {
       light: "light",

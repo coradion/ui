@@ -26,9 +26,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build-tailwind": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css",
+    "build-tailwind": "pnpm dlx @tailwindcss/cli -i ./src/styles.css -o ./dist/styles.css",
     "build-components": "tsc --build",
-    "build": "npm run build-components && npm run build-tailwind"
+    "build": "pnpm run build-components && npm run build-tailwind"
   },
   "author": "Coradion",
   "license": "AGPL-3.0-or-later",

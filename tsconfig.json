@@ -1,20 +1,20 @@
 {
-  "extends": "@tsconfig/strictest/tsconfig.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "composite": true,
-    "declaration": true,
-    "declarationMap": true,
-    "jsx": "react-jsx",
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "outDir": "dist",
-    "sourceMap": true,
-    "sourceRoot": "src",
-    "target": "ESNext",
-    "paths": {
-      "~/*": ["./*"]
-    }
-  },
-  "include": ["src/**/*", ".storybook/**/*"],
+	"extends": "@tsconfig/strictest/tsconfig.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"composite": true,
+		"declaration": true,
+		"declarationMap": true,
+		"jsx": "react-jsx",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"outDir": "dist",
+		"sourceMap": true,
+		"sourceRoot": "src",
+		"target": "ESNext",
+		"paths": {
+			"~/*": ["./*"]
+		}
+	},
+	"include": ["src/**/*", ".storybook/**/*"]
 }

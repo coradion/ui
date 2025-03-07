@@ -34,6 +34,7 @@
   "license": "AGPL-3.0-or-later",
   "keywords": [],
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@chromatic-com/storybook": "^3.1.0",
     "@storybook/addon-actions": "^8.3.2",
     "@storybook/addon-essentials": "^8.3.2",
